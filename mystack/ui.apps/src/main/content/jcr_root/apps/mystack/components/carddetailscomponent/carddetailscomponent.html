@@ -1,0 +1,14 @@
+<sly data-sly-use.cardModel="${'com.mystack.core.models.CardDetails' @ pagePath=currentPage.path}">
+  <div>
+    Card Title: ${pageProperties.cardTitle}<br>
+    <----- ---------------------------- Details from Model --------------------------- ---->
+    Page Path from Model: ${cardModel.pagePath}<br>
+    Page Path from Model: ${cardModel.cardTitle}<br>
+    CardSubtitle from Model: ${cardModel.cardSubtitle}<br>
+    cardDescription from Model: ${cardModel.cardDescription}<br>
+    cardImage from Model: ${cardModel.cardImage}<br>
+    cardCategory from Model: ${cardModel.cardCategory}<br>
+    cardType from Model: ${cardModel.cardType}<br>
+    cardStatus from Model: ${cardModel.cardStatus}<br>
+  </div>
+</sly>

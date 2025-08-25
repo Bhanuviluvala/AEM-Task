@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        jcr:description="This is template is for Card Details Page of my site"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Card Details Page"/>
+</jcr:root>

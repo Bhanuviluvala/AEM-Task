@@ -1,0 +1,26 @@
+
+  <sly data-sly-use.cardListing="com.mystack.core.models.CardListingModel">
+
+
+  <!-- Filter Controls -->
+  <div class="filters">
+    <select data-sly-list="${cardListing.sortDropDownList}" id="sort-filter">
+      <option value="${item}">${cardListing.sortDropDownList[item]}</option>
+    </select>
+
+    <select data-sly-list="${cardListing.categoryDropDownList}" id="status-filter">
+      <option value="${item}">${cardListing.categoryDropDownList[item]}</option>
+    </select>
+  </div>
+
+  <!-- Card Grid -->
+  <div data-sly-list.card=${cardListing.cards} class="card-grid" id="card-container">
+    <div class="card" data-status="active" data-title="${card.cardTitle}" data-type="manual" data-category="${card.cardCategoryKey}">
+      <p><strong>Status:</strong> ${card.cardStaus}</p>
+      <p><strong>Type:</strong>  ${card.cardType}</p>
+      <img src="${card.cardImage}" alt="Card image ${cardList.count}" class="card-img" />
+      <p><strong>Category:</strong> ${card.cardCategory} </p>
+      <h3>${card.cardTitle}</h3>
+      <p>${card.cardDescription}</p>
+    </div>
+  </div>
